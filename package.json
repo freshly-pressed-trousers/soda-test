@@ -1,0 +1,19 @@
+{
+	"name": "shell-test",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./bin/www"
+	},
+	"dependencies": {
+		"debug": "~2.6.9",
+		"express": "~4.16.1",
+		"express-graphql": "^0.9.0",
+		"graphql": "^14.6.0",
+		"graphql-iso-date": "^3.6.1",
+		"graphql-scalars": "^1.0.7",
+		"jest": "^25.1.0",
+		"mongodb-memory-server": "^6.4.1",
+		"mongoose": "^5.9.5"
+	}
+}
