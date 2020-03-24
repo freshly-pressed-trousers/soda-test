@@ -1,3 +1,7 @@
+## Live demo
+
+Live demo available here: https://soda-test-willh.herokuapp.com/
+
 ## Installing & running
 
 To install run:
