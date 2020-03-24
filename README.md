@@ -1,3 +1,5 @@
+## Installing & running
+
 To install run:
 
 ```
@@ -11,6 +13,8 @@ npm start
 ```
 
 By default it will run on port 3000, so go to http://localhost:3000/ and the graphql playground will appear
+
+## Queries & mutations
 
 The following queries and mutations are available:
 
@@ -53,3 +57,9 @@ query getLogs($forCaptain: String!) {
 ```
 
 The `$forCaptain` filter is optional in the getLogs query allowing you to view all logs.
+
+## Architectural diagram
+
+![architectural diagram](soda-diagram.png "Diagram")
+
+At the moment for the sake of portability all data is persisted into an in-memory mongodb, this can easily be swapped out for a real mongodb if data persistence is required. The mongodb-memory-server should NOT be used in a production environment and exists in this app to demonstrate functionality easily.
