@@ -18,6 +18,26 @@ npm start
 
 By default it will run on port 3000, so go to http://localhost:3000/ and the graphql playground will appear
 
+## Tests
+
+To run tests
+
+```
+npm test
+```
+
+It will generate and show an in-terminal coverage report. All core functionality is covered (besides a little bit of express plumbing).
+
+To run tests in watch mode (helpful for TDD):
+
+```
+npm run test:watch
+```
+
+This will watch the files and rerun them when changes happen.
+
+The current test coverage is integration oriented and tests the app using supertest by firing off queries at the HTTP level with stubs for the mongoose objects. This tests the stack both at the HTTP level, the schema level (eg picks up regressions in type changes) and at the resolver level connected to the Mongoose models.
+
 ## Queries & mutations
 
 The following queries and mutations are available:
